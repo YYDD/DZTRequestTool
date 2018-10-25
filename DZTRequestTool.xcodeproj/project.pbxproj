@@ -1,0 +1,692 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		185117072181544F00114095 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 185117062181544F00114095 /* AppDelegate.m */; };
+		1851170A2181544F00114095 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185117092181544F00114095 /* ViewController.m */; };
+		1851170D2181544F00114095 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1851170B2181544F00114095 /* Main.storyboard */; };
+		1851170F2181545100114095 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1851170E2181545100114095 /* Assets.xcassets */; };
+		185117122181545100114095 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185117102181545100114095 /* LaunchScreen.storyboard */; };
+		185117152181545100114095 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 185117142181545100114095 /* main.m */; };
+		1851171F2181545100114095 /* DZTRequestToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1851171E2181545100114095 /* DZTRequestToolTests.m */; };
+		1851172A2181545100114095 /* DZTRequestToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 185117292181545100114095 /* DZTRequestToolUITests.m */; };
+		1851173A2181571A00114095 /* DZTHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 185117392181571A00114095 /* DZTHttpRequest.m */; };
+		1851173D2181583500114095 /* DZTHttpResponseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1851173C2181583500114095 /* DZTHttpResponseObject.m */; };
+		185117402181634800114095 /* DZTHttpConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 1851173F2181634800114095 /* DZTHttpConfig.m */; };
+		1851174D21819FE900114095 /* NSError+DZTExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 1851174C21819FE900114095 /* NSError+DZTExt.m */; };
+		186D86BF2181B3D70018E74A /* DZTHttpResponseObject+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 186D86BE2181B3D70018E74A /* DZTHttpResponseObject+Ext.m */; };
+		18BBE09A2181C3350041B2C1 /* DZTBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BBE0992181C3350041B2C1 /* DZTBaseRequest.m */; };
+		18BBE0A02181C8950041B2C1 /* DZTHttpRequest+Upload.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BBE09F2181C8950041B2C1 /* DZTHttpRequest+Upload.m */; };
+		18BBE0A32181CA3B0041B2C1 /* DZTRequestLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BBE0A22181CA3B0041B2C1 /* DZTRequestLog.m */; };
+		18C625452181BB98005CE676 /* DZTHttpRequest+JsonMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C625442181BB98005CE676 /* DZTHttpRequest+JsonMethod.m */; };
+		5C9C3EF6914B4256DEC9ED14 /* libPods-DZTRequestTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 555F74844EA770967BF30E7A /* libPods-DZTRequestTool.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1851171B2181545100114095 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 185116FA2181544E00114095 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 185117012181544E00114095;
+			remoteInfo = DZTRequestTool;
+		};
+		185117262181545100114095 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 185116FA2181544E00114095 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 185117012181544E00114095;
+			remoteInfo = DZTRequestTool;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		185117022181544E00114095 /* DZTRequestTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DZTRequestTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		185117052181544E00114095 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		185117062181544F00114095 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		185117082181544F00114095 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		185117092181544F00114095 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1851170C2181544F00114095 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1851170E2181545100114095 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		185117112181545100114095 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		185117132181545100114095 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		185117142181545100114095 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1851171A2181545100114095 /* DZTRequestToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DZTRequestToolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1851171E2181545100114095 /* DZTRequestToolTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DZTRequestToolTests.m; sourceTree = "<group>"; };
+		185117202181545100114095 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		185117252181545100114095 /* DZTRequestToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DZTRequestToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		185117292181545100114095 /* DZTRequestToolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DZTRequestToolUITests.m; sourceTree = "<group>"; };
+		1851172B2181545100114095 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		185117382181571A00114095 /* DZTHttpRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DZTHttpRequest.h; sourceTree = "<group>"; };
+		185117392181571A00114095 /* DZTHttpRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DZTHttpRequest.m; sourceTree = "<group>"; };
+		1851173B2181583500114095 /* DZTHttpResponseObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DZTHttpResponseObject.h; sourceTree = "<group>"; };
+		1851173C2181583500114095 /* DZTHttpResponseObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DZTHttpResponseObject.m; sourceTree = "<group>"; };
+		1851173E2181634800114095 /* DZTHttpConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DZTHttpConfig.h; sourceTree = "<group>"; };
+		1851173F2181634800114095 /* DZTHttpConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DZTHttpConfig.m; sourceTree = "<group>"; };
+		1851174B21819FE900114095 /* NSError+DZTExt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSError+DZTExt.h"; sourceTree = "<group>"; };
+		1851174C21819FE900114095 /* NSError+DZTExt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSError+DZTExt.m"; sourceTree = "<group>"; };
+		186D86BD2181B3D70018E74A /* DZTHttpResponseObject+Ext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DZTHttpResponseObject+Ext.h"; sourceTree = "<group>"; };
+		186D86BE2181B3D70018E74A /* DZTHttpResponseObject+Ext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DZTHttpResponseObject+Ext.m"; sourceTree = "<group>"; };
+		18BBE0982181C3350041B2C1 /* DZTBaseRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DZTBaseRequest.h; sourceTree = "<group>"; };
+		18BBE0992181C3350041B2C1 /* DZTBaseRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DZTBaseRequest.m; sourceTree = "<group>"; };
+		18BBE09C2181C77B0041B2C1 /* DZTHttpRequest+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DZTHttpRequest+Private.h"; sourceTree = "<group>"; };
+		18BBE09E2181C8950041B2C1 /* DZTHttpRequest+Upload.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DZTHttpRequest+Upload.h"; sourceTree = "<group>"; };
+		18BBE09F2181C8950041B2C1 /* DZTHttpRequest+Upload.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DZTHttpRequest+Upload.m"; sourceTree = "<group>"; };
+		18BBE0A12181CA3B0041B2C1 /* DZTRequestLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DZTRequestLog.h; sourceTree = "<group>"; };
+		18BBE0A22181CA3B0041B2C1 /* DZTRequestLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DZTRequestLog.m; sourceTree = "<group>"; };
+		18C625432181BB98005CE676 /* DZTHttpRequest+JsonMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DZTHttpRequest+JsonMethod.h"; sourceTree = "<group>"; };
+		18C625442181BB98005CE676 /* DZTHttpRequest+JsonMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DZTHttpRequest+JsonMethod.m"; sourceTree = "<group>"; };
+		555F74844EA770967BF30E7A /* libPods-DZTRequestTool.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DZTRequestTool.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93E8B0DD08345A96D2036B39 /* Pods-DZTRequestTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DZTRequestTool.release.xcconfig"; path = "Pods/Target Support Files/Pods-DZTRequestTool/Pods-DZTRequestTool.release.xcconfig"; sourceTree = "<group>"; };
+		FA526854CC6CCACB4CEB4F76 /* Pods-DZTRequestTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DZTRequestTool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DZTRequestTool/Pods-DZTRequestTool.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		185116FF2181544E00114095 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C9C3EF6914B4256DEC9ED14 /* libPods-DZTRequestTool.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		185117172181545100114095 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		185117222181545100114095 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		028366D280866A234D740463 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FA526854CC6CCACB4CEB4F76 /* Pods-DZTRequestTool.debug.xcconfig */,
+				93E8B0DD08345A96D2036B39 /* Pods-DZTRequestTool.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		185116F92181544E00114095 = {
+			isa = PBXGroup;
+			children = (
+				18511737218156FA00114095 /* DZTRequestCommon */,
+				185117042181544E00114095 /* DZTRequestTool */,
+				1851171D2181545100114095 /* DZTRequestToolTests */,
+				185117282181545100114095 /* DZTRequestToolUITests */,
+				185117032181544E00114095 /* Products */,
+				028366D280866A234D740463 /* Pods */,
+				6443C48CF139795945C3FFB0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		185117032181544E00114095 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				185117022181544E00114095 /* DZTRequestTool.app */,
+				1851171A2181545100114095 /* DZTRequestToolTests.xctest */,
+				185117252181545100114095 /* DZTRequestToolUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		185117042181544E00114095 /* DZTRequestTool */ = {
+			isa = PBXGroup;
+			children = (
+				185117052181544E00114095 /* AppDelegate.h */,
+				185117062181544F00114095 /* AppDelegate.m */,
+				185117082181544F00114095 /* ViewController.h */,
+				185117092181544F00114095 /* ViewController.m */,
+				186D86BD2181B3D70018E74A /* DZTHttpResponseObject+Ext.h */,
+				186D86BE2181B3D70018E74A /* DZTHttpResponseObject+Ext.m */,
+				1851170B2181544F00114095 /* Main.storyboard */,
+				1851170E2181545100114095 /* Assets.xcassets */,
+				185117102181545100114095 /* LaunchScreen.storyboard */,
+				185117132181545100114095 /* Info.plist */,
+				185117142181545100114095 /* main.m */,
+			);
+			path = DZTRequestTool;
+			sourceTree = "<group>";
+		};
+		1851171D2181545100114095 /* DZTRequestToolTests */ = {
+			isa = PBXGroup;
+			children = (
+				1851171E2181545100114095 /* DZTRequestToolTests.m */,
+				185117202181545100114095 /* Info.plist */,
+			);
+			path = DZTRequestToolTests;
+			sourceTree = "<group>";
+		};
+		185117282181545100114095 /* DZTRequestToolUITests */ = {
+			isa = PBXGroup;
+			children = (
+				185117292181545100114095 /* DZTRequestToolUITests.m */,
+				1851172B2181545100114095 /* Info.plist */,
+			);
+			path = DZTRequestToolUITests;
+			sourceTree = "<group>";
+		};
+		18511737218156FA00114095 /* DZTRequestCommon */ = {
+			isa = PBXGroup;
+			children = (
+				185117382181571A00114095 /* DZTHttpRequest.h */,
+				185117392181571A00114095 /* DZTHttpRequest.m */,
+				18BBE09C2181C77B0041B2C1 /* DZTHttpRequest+Private.h */,
+				18C625432181BB98005CE676 /* DZTHttpRequest+JsonMethod.h */,
+				18C625442181BB98005CE676 /* DZTHttpRequest+JsonMethod.m */,
+				18BBE09E2181C8950041B2C1 /* DZTHttpRequest+Upload.h */,
+				18BBE09F2181C8950041B2C1 /* DZTHttpRequest+Upload.m */,
+				18BBE0982181C3350041B2C1 /* DZTBaseRequest.h */,
+				18BBE0992181C3350041B2C1 /* DZTBaseRequest.m */,
+				18BBE0A12181CA3B0041B2C1 /* DZTRequestLog.h */,
+				18BBE0A22181CA3B0041B2C1 /* DZTRequestLog.m */,
+				1851173E2181634800114095 /* DZTHttpConfig.h */,
+				1851173F2181634800114095 /* DZTHttpConfig.m */,
+				1851174B21819FE900114095 /* NSError+DZTExt.h */,
+				1851174C21819FE900114095 /* NSError+DZTExt.m */,
+				1851173B2181583500114095 /* DZTHttpResponseObject.h */,
+				1851173C2181583500114095 /* DZTHttpResponseObject.m */,
+			);
+			path = DZTRequestCommon;
+			sourceTree = "<group>";
+		};
+		6443C48CF139795945C3FFB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				555F74844EA770967BF30E7A /* libPods-DZTRequestTool.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		185117012181544E00114095 /* DZTRequestTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1851172E2181545100114095 /* Build configuration list for PBXNativeTarget "DZTRequestTool" */;
+			buildPhases = (
+				EE8424106F72BC52C79355F0 /* [CP] Check Pods Manifest.lock */,
+				185116FE2181544E00114095 /* Sources */,
+				185116FF2181544E00114095 /* Frameworks */,
+				185117002181544E00114095 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DZTRequestTool;
+			productName = DZTRequestTool;
+			productReference = 185117022181544E00114095 /* DZTRequestTool.app */;
+			productType = "com.apple.product-type.application";
+		};
+		185117192181545100114095 /* DZTRequestToolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 185117312181545100114095 /* Build configuration list for PBXNativeTarget "DZTRequestToolTests" */;
+			buildPhases = (
+				185117162181545100114095 /* Sources */,
+				185117172181545100114095 /* Frameworks */,
+				185117182181545100114095 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1851171C2181545100114095 /* PBXTargetDependency */,
+			);
+			name = DZTRequestToolTests;
+			productName = DZTRequestToolTests;
+			productReference = 1851171A2181545100114095 /* DZTRequestToolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		185117242181545100114095 /* DZTRequestToolUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 185117342181545100114095 /* Build configuration list for PBXNativeTarget "DZTRequestToolUITests" */;
+			buildPhases = (
+				185117212181545100114095 /* Sources */,
+				185117222181545100114095 /* Frameworks */,
+				185117232181545100114095 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				185117272181545100114095 /* PBXTargetDependency */,
+			);
+			name = DZTRequestToolUITests;
+			productName = DZTRequestToolUITests;
+			productReference = 185117252181545100114095 /* DZTRequestToolUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		185116FA2181544E00114095 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = com.yydd.dzt;
+				TargetAttributes = {
+					185117012181544E00114095 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					185117192181545100114095 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 185117012181544E00114095;
+					};
+					185117242181545100114095 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 185117012181544E00114095;
+					};
+				};
+			};
+			buildConfigurationList = 185116FD2181544E00114095 /* Build configuration list for PBXProject "DZTRequestTool" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 185116F92181544E00114095;
+			productRefGroup = 185117032181544E00114095 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				185117012181544E00114095 /* DZTRequestTool */,
+				185117192181545100114095 /* DZTRequestToolTests */,
+				185117242181545100114095 /* DZTRequestToolUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		185117002181544E00114095 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				185117122181545100114095 /* LaunchScreen.storyboard in Resources */,
+				1851170F2181545100114095 /* Assets.xcassets in Resources */,
+				1851170D2181544F00114095 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		185117182181545100114095 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		185117232181545100114095 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EE8424106F72BC52C79355F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DZTRequestTool-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		185116FE2181544E00114095 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1851170A2181544F00114095 /* ViewController.m in Sources */,
+				185117152181545100114095 /* main.m in Sources */,
+				186D86BF2181B3D70018E74A /* DZTHttpResponseObject+Ext.m in Sources */,
+				18BBE09A2181C3350041B2C1 /* DZTBaseRequest.m in Sources */,
+				18BBE0A02181C8950041B2C1 /* DZTHttpRequest+Upload.m in Sources */,
+				18C625452181BB98005CE676 /* DZTHttpRequest+JsonMethod.m in Sources */,
+				185117402181634800114095 /* DZTHttpConfig.m in Sources */,
+				1851173D2181583500114095 /* DZTHttpResponseObject.m in Sources */,
+				1851173A2181571A00114095 /* DZTHttpRequest.m in Sources */,
+				1851174D21819FE900114095 /* NSError+DZTExt.m in Sources */,
+				185117072181544F00114095 /* AppDelegate.m in Sources */,
+				18BBE0A32181CA3B0041B2C1 /* DZTRequestLog.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		185117162181545100114095 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1851171F2181545100114095 /* DZTRequestToolTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		185117212181545100114095 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1851172A2181545100114095 /* DZTRequestToolUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1851171C2181545100114095 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 185117012181544E00114095 /* DZTRequestTool */;
+			targetProxy = 1851171B2181545100114095 /* PBXContainerItemProxy */;
+		};
+		185117272181545100114095 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 185117012181544E00114095 /* DZTRequestTool */;
+			targetProxy = 185117262181545100114095 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1851170B2181544F00114095 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1851170C2181544F00114095 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		185117102181545100114095 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				185117112181545100114095 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1851172C2181545100114095 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1851172D2181545100114095 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1851172F2181545100114095 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA526854CC6CCACB4CEB4F76 /* Pods-DZTRequestTool.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DZTRequestTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yydd.dzt.DZTRequestTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		185117302181545100114095 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93E8B0DD08345A96D2036B39 /* Pods-DZTRequestTool.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DZTRequestTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yydd.dzt.DZTRequestTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		185117322181545100114095 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DZTRequestToolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yydd.dzt.DZTRequestToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DZTRequestTool.app/DZTRequestTool";
+			};
+			name = Debug;
+		};
+		185117332181545100114095 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DZTRequestToolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yydd.dzt.DZTRequestToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DZTRequestTool.app/DZTRequestTool";
+			};
+			name = Release;
+		};
+		185117352181545100114095 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DZTRequestToolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yydd.dzt.DZTRequestToolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DZTRequestTool;
+			};
+			name = Debug;
+		};
+		185117362181545100114095 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DZTRequestToolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yydd.dzt.DZTRequestToolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DZTRequestTool;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		185116FD2181544E00114095 /* Build configuration list for PBXProject "DZTRequestTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1851172C2181545100114095 /* Debug */,
+				1851172D2181545100114095 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1851172E2181545100114095 /* Build configuration list for PBXNativeTarget "DZTRequestTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1851172F2181545100114095 /* Debug */,
+				185117302181545100114095 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		185117312181545100114095 /* Build configuration list for PBXNativeTarget "DZTRequestToolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				185117322181545100114095 /* Debug */,
+				185117332181545100114095 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		185117342181545100114095 /* Build configuration list for PBXNativeTarget "DZTRequestToolUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				185117352181545100114095 /* Debug */,
+				185117362181545100114095 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 185116FA2181544E00114095 /* Project object */;
+}
