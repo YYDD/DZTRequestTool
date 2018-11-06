@@ -10,10 +10,11 @@
 
 @interface DZTHttpResponseObject : NSObject
 
+
 /**
- 0是成功  非0都是错误
+ 错误码
  */
-@property (nonatomic, assign) NSInteger code;
+@property (nonatomic, assign) NSInteger errorCode;
 
 /**
  错误信息
@@ -23,7 +24,7 @@
 /**
  返回具体结果
  */
-@property (nonatomic, strong) id result;
+@property (nonatomic, strong) id data;
 
 /**
  请求是否成功
