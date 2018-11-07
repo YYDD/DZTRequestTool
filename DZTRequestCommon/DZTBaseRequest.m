@@ -22,14 +22,14 @@
         [[DZTBaseRequest sharedRequest]checkSpecialStateWhenSuccessWithObj:responseObject WithTask:task];
         
         if (comp) {
-            comp([[DZTHttpResponseObject alloc]initDataWithResp:responseObject]);
+            comp([DZTHttpResponseObject createDataWithResp:responseObject]);
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         [[DZTBaseRequest sharedRequest]updateError:error task:task];
         [[DZTBaseRequest sharedRequest]logWithSessionTask:task response:nil error:error];
         [[DZTBaseRequest sharedRequest]checkSpecialStateWhenFailureWithError:error WithTask:task];
         if (comp) {
-            comp([[DZTHttpResponseObject alloc]initErrorDataWithError:error]);
+            comp([DZTHttpResponseObject createErrorDataWithError:error]);
         }
         
     }];
@@ -41,7 +41,7 @@
         [[DZTBaseRequest sharedRequest]logWithSessionTask:task response:responseObject error:nil];
         [[DZTBaseRequest sharedRequest]checkSpecialStateWhenSuccessWithObj:responseObject WithTask:task];
         if (comp) {
-            comp([[DZTHttpResponseObject alloc]initDataWithResp:responseObject]);
+            comp([DZTHttpResponseObject createDataWithResp:responseObject]);
         }
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
@@ -49,7 +49,7 @@
         [[DZTBaseRequest sharedRequest]logWithSessionTask:task response:nil error:error];
         [[DZTBaseRequest sharedRequest]checkSpecialStateWhenFailureWithError:error WithTask:task];
         if (comp) {
-            comp([[DZTHttpResponseObject alloc]initErrorDataWithError:error]);
+            comp([DZTHttpResponseObject createErrorDataWithError:error]);
         }
         
     }];
@@ -61,7 +61,7 @@
         [[DZTBaseRequest sharedRequest]logWithSessionTask:task response:responseObject error:nil];
         [[DZTBaseRequest sharedRequest]checkSpecialStateWhenSuccessWithObj:responseObject WithTask:task];
         if (comp) {
-            comp([[DZTHttpResponseObject alloc]initDataWithResp:responseObject]);
+            comp([DZTHttpResponseObject createDataWithResp:responseObject]);
         }
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
@@ -70,7 +70,7 @@
         [[DZTBaseRequest sharedRequest]logWithSessionTask:task response:nil error:error];
         [[DZTBaseRequest sharedRequest]checkSpecialStateWhenFailureWithError:error WithTask:task];
         if (comp) {
-            comp([[DZTHttpResponseObject alloc]initErrorDataWithError:error]);
+            comp([DZTHttpResponseObject createErrorDataWithError:error]);
         }
         
     }];
@@ -83,14 +83,14 @@
         [[DZTBaseRequest sharedRequest]checkSpecialStateWhenSuccessWithObj:responseObject WithTask:task];
         
         if (comp) {
-            comp([[DZTHttpResponseObject alloc]initDataWithResp:responseObject]);
+            comp([DZTHttpResponseObject createDataWithResp:responseObject]);
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         [[DZTBaseRequest sharedRequest]updateError:error task:task];
         [[DZTBaseRequest sharedRequest]logWithSessionTask:task response:nil error:error];
         [[DZTBaseRequest sharedRequest]checkSpecialStateWhenFailureWithError:error WithTask:task];
         if (comp) {
-            comp([[DZTHttpResponseObject alloc]initErrorDataWithError:error]);
+            comp([DZTHttpResponseObject createErrorDataWithError:error]);
         }
         
     }];
@@ -101,9 +101,10 @@
     [sessionManager GET:URLString parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         [[DZTBaseRequest sharedRequest]logWithSessionTask:task response:responseObject error:nil];
         [[DZTBaseRequest sharedRequest]checkSpecialStateWhenSuccessWithObj:responseObject WithTask:task];
-        
+
         if (comp) {
-            comp([[DZTHttpResponseObject alloc]initDataWithResp:responseObject]);
+    
+            comp([DZTHttpResponseObject createDataWithResp:responseObject]);
         }
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
@@ -112,7 +113,7 @@
         [[DZTBaseRequest sharedRequest]checkSpecialStateWhenFailureWithError:error WithTask:task];
         
         if (comp) {
-            comp([[DZTHttpResponseObject alloc]initErrorDataWithError:error]);
+            comp([DZTHttpResponseObject createErrorDataWithError:error]);
         }
     }];
 }

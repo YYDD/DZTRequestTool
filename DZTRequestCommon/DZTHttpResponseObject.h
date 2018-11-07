@@ -35,9 +35,9 @@
 @property (nonatomic, strong) id originalData;
 
 
-- (DZTHttpResponseObject *)initDataWithResp:(id)resp;
++ (DZTHttpResponseObject *)createDataWithResp:(id)resp;
 
-- (DZTHttpResponseObject *)initErrorDataWithError:(NSError *)error;
++ (DZTHttpResponseObject *)createErrorDataWithError:(NSError *)error;
 
 
 @end

@@ -18,7 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-    NSString *URLString = @"https://www.baidu.com";
+    NSString *URLString = @"http://www.baidu.com";
     [DZTHttpRequest requestByGet:URLString parameters:nil completion:^(DZTHttpResponseObject *respObj) {
         NSLog(@"----%@",respObj);
     }];

@@ -10,12 +10,12 @@
 
 @implementation DZTHttpResponseObject
 
-- (DZTHttpResponseObject *)initDataWithResp:(id)resp {
++ (DZTHttpResponseObject *)createDataWithResp:(id)resp {
     
     return nil;
 }
 
-- (DZTHttpResponseObject *)initErrorDataWithError:(NSError *)error {
++ (DZTHttpResponseObject *)createErrorDataWithError:(NSError *)error {
     return nil;
 }
 
