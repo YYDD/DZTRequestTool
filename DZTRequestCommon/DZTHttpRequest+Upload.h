@@ -11,5 +11,8 @@
 
 @interface DZTHttpRequest (Upload)
 
++ (void)requestByPostForUpload:(NSString *)URLString parameters:(NSDictionary *)parameters fileData:(NSData *)fileData completion:(DZTHttpRespComp)comp;
+
+
 @end
 
