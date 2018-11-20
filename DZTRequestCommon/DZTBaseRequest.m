@@ -119,6 +119,33 @@
 }
 
 
++ (void)PostMethodForUploadWithSessionManager:(AFHTTPSessionManager *)sessionManager URLString:(NSString *)URLString parameters:(NSDictionary *)parameters WithFileData:(NSData *)fileData completion:(DZTHttpRespComp)comp {
+    
+    [sessionManager POST:URLString parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+        
+        [formData appendPartWithFileData:fileData name:@"file" fileName:@"fileName.jpg" mimeType:@"form-data"];
+        
+    } progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        [[DZTBaseRequest sharedRequest]logWithSessionTask:task response:responseObject error:nil];
+        [[DZTBaseRequest sharedRequest]checkSpecialStateWhenSuccessWithObj:responseObject WithTask:task];
+        
+        if (comp) {
+            
+            comp([DZTHttpResponseObject createDataWithResp:responseObject]);
+        }
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        [[DZTBaseRequest sharedRequest]updateError:error task:task];
+        [[DZTBaseRequest sharedRequest]logWithSessionTask:task response:nil error:error];
+        [[DZTBaseRequest sharedRequest]checkSpecialStateWhenFailureWithError:error WithTask:task];
+        
+        if (comp) {
+            comp([DZTHttpResponseObject createErrorDataWithError:error]);
+        }
+    }];
+    
+}
+
+
 - (void)updateError:(NSError *)error task:(NSURLSessionDataTask *)task {
 
     [DZTRequestLog updateError:error task:task];

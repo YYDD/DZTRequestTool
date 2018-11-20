@@ -23,4 +23,6 @@
 
 + (void)PatchMethodWithSessionManager:(AFHTTPSessionManager *)sessionManager URLString:(NSString *)URLString parameters:(NSDictionary *)parameters completion:(DZTHttpRespComp)comp;
 
++ (void)PostMethodForUploadWithSessionManager:(AFHTTPSessionManager *)sessionManager URLString:(NSString *)URLString parameters:(NSDictionary *)parameters WithFileData:(NSData *)fileData completion:(DZTHttpRespComp)comp ;
+
 @end
