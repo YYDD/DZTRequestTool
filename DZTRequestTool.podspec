@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'DZTRequestTool'
-  spec.version      = '1.0.2'
+  spec.version      = '1.1.0'
   spec.ios.deployment_target = '8.0'
   spec.license      = { :type => 'BSD' }
   spec.homepage     = 'https://github.com/YYDD/DZTRequestTool.git'
@@ -9,8 +9,8 @@ Pod::Spec.new do |spec|
   spec.requires_arc = true
 
 
-#  spec.source       = { :git => 'https://github.com/YYDD/DZTBaseProject.git',:tag => spec.version}
-  spec.source       = { :git => 'https://github.com/YYDD/DZTRequestTool.git'}
+  spec.source       = { :git => 'https://github.com/YYDD/DZTBaseProject.git',:tag => spec.version}
+#  spec.source       = { :git => 'https://github.com/YYDD/DZTRequestTool.git'}
   spec.source_files = 'DZTRequestCommon/*.{h,m}'
   spec.public_header_files = 'DZTRequestCommon/*.{h}'
 

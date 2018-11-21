@@ -13,6 +13,8 @@
 
 @interface DZTHttpRequest : NSObject
 
++ (DZTHttpRequest *)sharedRequest;
+
 /**
  配置信息
  */
