@@ -9,7 +9,7 @@ Pod::Spec.new do |spec|
   spec.requires_arc = true
 
 
-  spec.source       = { :git => 'https://github.com/YYDD/DZTBaseProject.git',:tag => spec.version}
+  spec.source       = { :git => 'https://github.com/YYDD/DZTRequestTool.git',:tag => spec.version}
 #  spec.source       = { :git => 'https://github.com/YYDD/DZTRequestTool.git'}
   spec.source_files = 'DZTRequestCommon/*.{h,m}'
   spec.public_header_files = 'DZTRequestCommon/*.{h}'
