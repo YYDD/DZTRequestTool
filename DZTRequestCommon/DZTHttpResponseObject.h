@@ -14,7 +14,7 @@
 /**
  错误码
  */
-@property (nonatomic, assign) NSInteger errorCode;
+@property (nonatomic, strong) NSString *errorCode;
 
 /**
  错误信息
@@ -31,6 +31,7 @@
  */
 @property (nonatomic, assign) BOOL success;
 
+@property (nonatomic, assign) long long timestamp;
 
 @property (nonatomic, strong) id originalData;
 
