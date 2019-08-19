@@ -12,19 +12,19 @@
 
 
 /**
- 错误码
+ 操作码
  */
-@property (nonatomic, strong) NSString *errorCode;
+@property (nonatomic, assign) NSInteger code;
 
 /**
  错误信息
  */
-@property (nonatomic, copy) NSString *errorMsg;
+@property (nonatomic, copy) NSString *msg;
 
 /**
  返回具体结果
  */
-@property (nonatomic, strong) id data;
+@property (nonatomic, strong) id body;
 
 /**
  请求是否成功
